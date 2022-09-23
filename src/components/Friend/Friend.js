@@ -30,7 +30,7 @@ const Friend = (props) => {
             {/* dynamically show route in Link */}
             <p><Link to={`/friend/${id}`}><button>Show Detail of {id}</button></Link> </p>
 
-            {/** useState diye route declare & path
+            {/** useState diye route declare & dynamic path
              * handleClick(id) ta holo this structure
              */}
             <button onClick={() => handleClick(id)}>Click me</button>
