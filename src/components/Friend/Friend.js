@@ -1,8 +1,11 @@
 import React from 'react';
 
+
 const Friend = (props) => {
     
     const {name, email} = props.friends;
+
+    // style
     const friendStyle = {
         border: '1px solid purple',
         margin: '20px',
