@@ -21,7 +21,7 @@ const Friend = (props) => {
             <p>Email : {email}</p>
 
             {/* dynamically show route in Link */}
-            <p><Link to={`/friend/${id}`}><button>Show Detail {id}</button></Link> </p>
+            <p><Link to={`/friend/${id}`}><button>Show Detail of {id}</button></Link> </p>
         </div>
     );
 };
