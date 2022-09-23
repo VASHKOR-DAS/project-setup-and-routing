@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const Friend = (props) => {
@@ -13,6 +13,13 @@ const Friend = (props) => {
         padding: '20px',
         borderRadius: '20px'
     }
+
+    // useState route declare & dynamic path
+    const navigate = useNavigate();
+    const handleClick = (friendId) => {
+        const url = `/friend/${friendId}`
+        navigate(url);
+    }
     
     return (
 
@@ -22,6 +29,11 @@ const Friend = (props) => {
 
             {/* dynamically show route in Link */}
             <p><Link to={`/friend/${id}`}><button>Show Detail of {id}</button></Link> </p>
+
+            {/** useState diye route declare & path
+             * handleClick(id) ta holo this structure
+             */}
+            <button onClick={() => handleClick(id)}>Click me</button>
         </div>
     );
 };

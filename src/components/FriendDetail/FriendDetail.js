@@ -18,9 +18,9 @@ const FriendDetail = () => {
 
     return (
         <div>
-            <h3>Friend details components : {friendId}</h3>
+            <h2>Friend details components : {friendId}</h2>
             <h3>{friend.name}</h3>
-            <h5>{friend.email}</h5>
+            <p>{friend.email}</p>
             <p>{friend.phone}</p>
             <p>{friend.website}</p>
         </div>
